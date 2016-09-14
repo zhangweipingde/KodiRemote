@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Today View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <viewController id="M4Y-Lb-cyx" customClass="TodayViewController" customModule="Now_Playing" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ft6-oW-KC0"/>
+                        <viewControllerLayoutGuide type="bottom" id="FKl-LY-JtV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="110"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="alU-el-fay">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="ju5-hQ-Q1V"/>
+                                </constraints>
+                            </progressView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fE5-uF-3JP">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="628-0u-uOj"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Now" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E57-lm-qro">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.088043722209999994" blue="0.033824433629999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Simpsons" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dq7-bO-TQ1">
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Up Next:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="avk-xF-T5C">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Xqr-wS-8lb"/>
+                                    <constraint firstAttribute="width" constant="57" id="h9j-n8-CKl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Big Bang Theory" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yaV-GC-aGT">
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="11"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="fE5-uF-3JP" firstAttribute="centerY" secondItem="S3S-Oj-5AN" secondAttribute="centerY" id="0Us-e9-6tu"/>
+                            <constraint firstItem="alU-el-fay" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" id="15s-z2-PR9"/>
+                            <constraint firstItem="avk-xF-T5C" firstAttribute="top" secondItem="yaV-GC-aGT" secondAttribute="top" id="37F-fH-8fw"/>
+                            <constraint firstItem="avk-xF-T5C" firstAttribute="baseline" secondItem="yaV-GC-aGT" secondAttribute="baseline" id="8eW-Wi-x7W"/>
+                            <constraint firstItem="fE5-uF-3JP" firstAttribute="bottom" secondItem="avk-xF-T5C" secondAttribute="bottom" id="8rI-0Y-EdV"/>
+                            <constraint firstItem="yaV-GC-aGT" firstAttribute="leading" secondItem="avk-xF-T5C" secondAttribute="trailing" constant="2" id="COg-m1-0eN"/>
+                            <constraint firstItem="Dq7-bO-TQ1" firstAttribute="trailing" secondItem="yaV-GC-aGT" secondAttribute="trailing" id="U1Q-Zd-cdP"/>
+                            <constraint firstItem="avk-xF-T5C" firstAttribute="top" secondItem="Dq7-bO-TQ1" secondAttribute="bottom" constant="7" id="WEe-Hs-3kQ"/>
+                            <constraint firstAttribute="trailing" secondItem="alU-el-fay" secondAttribute="trailing" id="Wr0-DE-m91"/>
+                            <constraint firstItem="Dq7-bO-TQ1" firstAttribute="top" secondItem="alU-el-fay" secondAttribute="bottom" constant="37" id="ZE4-T2-1fT"/>
+                            <constraint firstItem="E57-lm-qro" firstAttribute="leading" secondItem="fE5-uF-3JP" secondAttribute="trailing" constant="8" symbolic="YES" id="bYg-P5-AZ6"/>
+                            <constraint firstItem="fE5-uF-3JP" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leadingMargin" id="dgi-Ul-1W4"/>
+                            <constraint firstItem="alU-el-fay" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" id="dlZ-Ym-BAS"/>
+                            <constraint firstItem="fE5-uF-3JP" firstAttribute="top" secondItem="alU-el-fay" secondAttribute="bottom" constant="21" id="f6t-Fx-fe3"/>
+                            <constraint firstItem="fE5-uF-3JP" firstAttribute="top" secondItem="E57-lm-qro" secondAttribute="top" id="iMV-Zs-CnT"/>
+                            <constraint firstItem="E57-lm-qro" firstAttribute="trailing" secondItem="S3S-Oj-5AN" secondAttribute="trailingMargin" id="n4O-7W-H6C"/>
+                            <constraint firstItem="E57-lm-qro" firstAttribute="leading" secondItem="Dq7-bO-TQ1" secondAttribute="leading" id="oeU-CD-Hgu"/>
+                            <constraint firstItem="Dq7-bO-TQ1" firstAttribute="leading" secondItem="avk-xF-T5C" secondAttribute="leading" id="qw3-St-sjF"/>
+                            <constraint firstItem="E57-lm-qro" firstAttribute="trailing" secondItem="Dq7-bO-TQ1" secondAttribute="trailing" id="xy8-cw-nPs"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="110"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="97.599999999999994" y="32.833583208395808"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" red="1" green="0.088043722205281449" blue="0.033824433632681172" alpha="1" colorSpace="calibratedRGB"/>
+</document>
